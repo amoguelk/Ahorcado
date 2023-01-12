@@ -23,12 +23,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val word = getWord()
     }
 
-    private fun getWord() {
+    private fun getWord(): Word? {
+        var word : Word? = null
         CoroutineScope(Dispatchers.IO).launch {
             val callWord = Constants.getRetrofit().create(HangmanAPI::class.java).getWord()
-            var word : Word?
             callWord.enqueue(object: Callback<Word> {
                 override fun onResponse(call: Call<Word>, response: Response<Word>) {
                     Log.d(Constants.LOGTAG, "Palabra: ${response.body()?.word}, Categoría: ${response.body()?.category}")
@@ -38,12 +39,17 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<Word>, t: Throwable) {
                     Log.d(Constants.LOGTAG, "ERROR: ${t.message}")
-                    Toast.makeText(this@MainActivity, )
+                    Toast.makeText(this@MainActivity, getString(R.string.error_text, t.message), Toast.LENGTH_LONG).show()
                     binding.pbLoad.visibility = View.GONE
                     word = null
                 }
 
             })
         }
+        return word
+    }
+
+    fun restartGame(view: View) {
+        getWord()
     }
 }
