@@ -22,38 +22,82 @@
 
     <ImageView
         android:id="@+id/ivSettings"
+        android:layout_width="48dp"
         android:layout_height="0dp"
-        android:layout_width="30dp"
-        android:src="@drawable/ic_settings"
-        android:paddingVertical="5dp"
         android:layout_marginEnd="10dp"
+        android:contentDescription="@string/settings_text"
+        android:foreground="@drawable/my_ripple"
+        android:paddingVertical="5dp"
+        android:src="@drawable/ic_settings"
         app:layout_constraintBottom_toBottomOf="@+id/tbMenu"
         app:layout_constraintEnd_toEndOf="@+id/tbMenu"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/tbMenu"
-        app:layout_constraintTop_toTopOf="@+id/tbMenu" />
+        app:layout_constraintTop_toTopOf="@+id/tbMenu"
+        tools:ignore="ImageContrastCheck" />
+
     <ImageView
         android:id="@+id/ivRestart"
+        android:layout_width="48dp"
         android:layout_height="0dp"
-        android:layout_width="30dp"
-        android:src="@drawable/ic_reset"
         android:layout_marginEnd="20dp"
+        android:contentDescription="@string/restart_text"
+        android:foreground="@drawable/my_ripple"
         android:onClick="restartGame"
-
+        android:src="@drawable/ic_reset"
         app:layout_constraintBottom_toBottomOf="@+id/tbMenu"
         app:layout_constraintEnd_toStartOf="@id/ivSettings"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/tbMenu"
-        app:layout_constraintTop_toTopOf="@+id/tbMenu" />
+        app:layout_constraintTop_toTopOf="@+id/tbMenu"
+        tools:ignore="ImageContrastCheck" />
 
-    <ProgressBar
-        android:id="@+id/pbLoad"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+<!--    <ProgressBar-->
+<!--        android:id="@+id/pbLoad"-->
+<!--        style="?android:attr/progressBarStyle"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tbMenu" />-->
+
+    <ImageView
+        android:id="@+id/ivHangman"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbMenu" />
+        app:layout_constraintTop_toBottomOf="@id/tbMenu"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/hangman06" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="?attr/font"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbMenu"
+        app:layout_constraintVertical_bias="0.4"
+        tools:text="Categoría: X X X X X" />
+
+    <TextView
+        android:id="@+id/tvWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="?attr/font"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbMenu"
+        tools:text="_ _ _ _ _" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

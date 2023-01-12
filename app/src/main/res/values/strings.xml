@@ -4,4 +4,6 @@
     <string name="sign" translatable="false">Mog @ 2023</string>
     <string name="version_text">Versión 1.0</string>
     <string name="error_text">Error de conexión: %s</string>
+    <string name="restart_text">Reiniciar juego</string>
+    <string name="settings_text">Configuración</string>
 </resources>
