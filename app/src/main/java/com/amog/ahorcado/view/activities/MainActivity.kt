@@ -1,10 +1,11 @@
 package com.amog.ahorcado.view.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.amog.ahorcado.R
 import com.amog.ahorcado.databinding.ActivityMainBinding
 import com.amog.ahorcado.model.HangmanAPI
@@ -23,7 +24,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         val word = getWord()
+
+        // Setup keyboard
+        var btnArray : Array<Button>
+        with(binding) {
+            btnArray = arrayOf(btnLetter01, btnLetter02, btnLetter03, btnLetter04, btnLetter05, btnLetter06, btnLetter07,
+                btnLetter08, btnLetter09, btnLetter10, btnLetter11, btnLetter12, btnLetter13, btnLetter14,
+                btnLetter15, btnLetter16, btnLetter17, btnLetter18, btnLetter19, btnLetter20, btnLetter21,
+                btnLetter22, btnLetter23, btnLetter24, btnLetter25, btnLetter26)
+        }
+        for (i in 0 until 26) {
+            val btn = btnArray[i]
+            btn.text = resources.getStringArray(R.array.letters)[i]
+            btn.setOnClickListener {
+                Toast.makeText(this, resources.getStringArray(R.array.letters)[i], Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     private fun getWord(): Word? {

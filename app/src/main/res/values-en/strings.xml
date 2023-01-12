@@ -6,4 +6,5 @@
     <string name="error_text">Connection error: %s</string>
     <string name="restart_text">Restart game</string>
     <string name="settings_text">Settings</string>
+    <string name="hangman_text">Hangman drawing</string>
 </resources>
