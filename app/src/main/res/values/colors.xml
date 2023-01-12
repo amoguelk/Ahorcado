@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- https://www.canva.com/colors/color-palettes/buddhist-monk/ -->
+    <color name="gold">#FBDD00</color>
+    <color name="tangerine">#E9A200</color>
+    <color name="scarlet">#B32800</color>
+    <color name="burgundy">#7F0000</color>
+    <!-- https://www.canva.com/colors/color-palettes/window-tide/ -->
+    <color name="midnight_blue">#41729F</color>
+    <color name="blue_grey">#5885AF</color>
+    <color name="dark_blue">#274472</color>
+    <color name="baby_blue">#C3E0E5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

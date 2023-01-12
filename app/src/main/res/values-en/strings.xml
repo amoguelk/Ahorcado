@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="btnStart_text">Start</string>
+    <string name="version_text">Version 1.0</string>
+    <string name="error_text">Connection error: %s</string>
+</resources>

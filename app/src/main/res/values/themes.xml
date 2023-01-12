@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Ahorcado" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="font">@font/bad_script</item>
+        <!-- https://www.canva.com/colors/color-palettes/buddhist-monk/ -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/scarlet</item>
+        <item name="colorPrimaryVariant">@color/burgundy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/tangerine</item>
+        <item name="colorSecondaryVariant">@color/gold</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

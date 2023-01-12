@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ahorcado</string>
+    <string name="btnStart_text">Comenzar</string>
+    <string name="sign" translatable="false">Mog @ 2023</string>
+    <string name="version_text">Versión 1.0</string>
+    <string name="error_text">Error de conexión: %s</string>
+</resources>
