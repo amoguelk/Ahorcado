@@ -3,7 +3,7 @@
     <string name="btnStart_text">Comenzar</string>
     <string name="sign" translatable="false">Mog @ 2023</string>
     <string name="version_text">Versión 1.0</string>
-    <string name="error_text">Error de conexión: %s</string>
+    <string name="error_text_toast">Error de conexión: %s</string>
     <string name="restart_text">Reiniciar juego</string>
     <string name="settings_text">Configuración</string>
     <string name="hangman_text">Dibujo de ahorcado</string>
@@ -35,4 +35,12 @@
         <item>Y</item>
         <item>Z</item>
     </string-array>
+    <string name="category_text">Categoría: %s</string>
+    <string name="restart_confirm_text">¿Reiniciar el juego con una nueva palabra?</string>
+    <string name="error_text">Error de conexión</string>
+    <string name="error_desc">Cara triste</string>
+    <string name="newGame_text">¿Iniciar un nuevo juego?</string>
+    <string name="gameWon_text">¡Ganaste!</string>
+    <string name="gameLost_text">Perdiste :(</string>
+    <string name="answer_text">La respuesta era %s</string>
 </resources>

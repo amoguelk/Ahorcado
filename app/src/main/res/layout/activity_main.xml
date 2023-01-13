@@ -52,6 +52,34 @@
         app:layout_constraintTop_toTopOf="@+id/tbMenu"
         tools:ignore="ImageContrastCheck" />
 
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/error_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbMenu"
+        app:srcCompat="@drawable/sadface"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_text"
+        android:textColor="?attr/errorColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivError"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="TextContrastCheck" />
+
     <ProgressBar
         android:id="@+id/pbLoad"
         style="?android:attr/progressBarStyle"
@@ -71,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbMenu"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_bias="0.025"
         tools:ignore="ImageContrastCheck"
         tools:src="@drawable/hangman06" />
 
@@ -87,23 +115,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbMenu"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_bias="0.375"
         tools:text="Categoría: X X X X X" />
 
     <TextView
         android:id="@+id/tvWord"
-        android:textColor="?android:attr/textColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="?attr/font"
-        android:textSize="42sp"
+        android:maxLength="20"
+        android:textColor="?android:attr/textColor"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbMenu"
-        tools:text="_ _ _ _ _" />
+        tools:text="_ _ _ _ _ _ _ _ _ _" />
 
     <TableLayout
+        android:id="@+id/keyboardLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"

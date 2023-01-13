@@ -3,8 +3,16 @@
     <string name="app_name">Hangman</string>
     <string name="btnStart_text">Start</string>
     <string name="version_text">Version 1.0</string>
-    <string name="error_text">Connection error: %s</string>
+    <string name="error_text_toast">Connection error: %s</string>
     <string name="restart_text">Restart game</string>
     <string name="settings_text">Settings</string>
     <string name="hangman_text">Hangman drawing</string>
+    <string name="category_text">Category: %s</string>
+    <string name="restart_confirm_text">Restart game with a new word?</string>
+    <string name="error_text">Connection error</string>
+    <string name="error_desc">Sad face</string>
+    <string name="newGame_text">Start a new game?</string>
+    <string name="gameWon_text">You won!</string>
+    <string name="gameLost_text">You lost :(</string>
+    <string name="answer_text">The answer was %s</string>
 </resources>

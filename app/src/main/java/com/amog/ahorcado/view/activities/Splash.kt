@@ -14,5 +14,8 @@ class Splash : AppCompatActivity() {
         setContentView(binding.root)
     }
 
-    fun onStartBtnClick(view: View) = startActivity(Intent(this, MainActivity::class.java))
+    fun onStartBtnClick(view: View) {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+    }
 }
