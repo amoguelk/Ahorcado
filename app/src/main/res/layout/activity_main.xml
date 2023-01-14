@@ -21,22 +21,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ivSettings"
-        android:layout_width="48dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="10dp"
-        android:contentDescription="@string/settings_text"
-        android:foreground="@drawable/my_ripple"
-        android:paddingVertical="5dp"
-        android:src="@drawable/ic_settings"
-        app:layout_constraintBottom_toBottomOf="@+id/tbMenu"
-        app:layout_constraintEnd_toEndOf="@+id/tbMenu"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tbMenu"
-        app:layout_constraintTop_toTopOf="@+id/tbMenu"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
         android:id="@+id/ivRestart"
         android:layout_width="48dp"
         android:layout_height="0dp"
@@ -46,7 +30,7 @@
         android:onClick="restartGame"
         android:src="@drawable/ic_reset"
         app:layout_constraintBottom_toBottomOf="@+id/tbMenu"
-        app:layout_constraintEnd_toStartOf="@id/ivSettings"
+        app:layout_constraintEnd_toEndOf="@id/tbMenu"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/tbMenu"
         app:layout_constraintTop_toTopOf="@+id/tbMenu"
